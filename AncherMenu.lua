@@ -254,6 +254,6 @@ end)
 UserInputService.InputBegan:Connect(function(input, processed)
 	if processed then return end
 	if input.KeyCode == Enum.KeyCode.M then
-		gui.Dissabled = gui.Enabled
+		gui.Enabled = not gui.Enabled
 	end
 end)
